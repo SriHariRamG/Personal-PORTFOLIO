@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/69feed712b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png.png" class="logo">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>FRONT-END DEVELOPER</p>
+            <h1>Hi, I'm <span> Sri Hari Ram G</span></h1>
+        </div>
+    </div>
+</div>
+//
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user_png.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Sri HariRam G, I'm a fascinated by web programming like developing apps and building websites.I'm keen on gain experiance in an company by field.For that reason,I'm looking for a company willing to offer me placements among the developers.In return,I would offer my full commitment to the company.I'm therefore currently looking for a job or internship as an Front-end Developer.          <div class="tab-titles">
+                
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links "onclick="opentab('Projects')">Projects</p>
+                <p class="tab-links "onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>BOOTSTRAP</span></li>
+                    <li><span>JAVASCRIPT</span></li>
+                    <li><span>PYTHON</span></li>
+                    <li><span>MYSQl</span></li>
+                    <li><span>PHP</span></li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Projects">
+                <ul>
+                    <li><span>Musical Website Store<br></span>Html,Css,Javascript</li>
+                    <li><span>Portfolio<br></span>Html,Css,Javascript</li>
+                    <li><span>Spotify-clone<br></span>Html,Css,Javascript</li>
+                    <li><span>Netflix-Clone<br></span>Html,Css,Javascript</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li></span>2020-2023<span><br>Bachelors of Computer Application<br>
+                    Madras Christian College</li>
+                    <li></span>2023-2024<span><br>Full Stack Developer<br>NxtWave Institute 2.O</li>
+                    <li></span>2019-2020<span><br>HSLC<br>St.Assisi Matric Higher Secondary School</li>
+                    <li></span>2017-2018<span><br>SSLC<br>St.Assisi Matric Higher Secondary School</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>  
+  
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Fascinated in designing websites to satisfy the users in a easy way.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-file-code"></i>
+                <h2>Front-end Design</h2>
+                <p>Fascinated in designing front-end websites to have friendly relationship between users.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Full Stack Developer</h2>
+                <p>Fascinated also in developing full stack application by using front-end and backend.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+    <div class="container">
+        <h1>My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/moviehub.png">
+                <div class="layer">
+                    <h3>Movie Hub</h3>
+                    <p>This app connect you to a movie world that you can watch the movies</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/bookstore-p2.png">
+            </div>
+            <div class="work">
+                <img src="images/cric-pedia-p3.png">
+            </div>
+            <div class="work">
+                <img src="images/avenue-book-p4.png">
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+</body>
+</html>
