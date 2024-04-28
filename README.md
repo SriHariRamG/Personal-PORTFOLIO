@@ -26,3 +26,12 @@ These are some of my works of NXTWAVE Institute using HTML, CSS, Bootstrap.
 I have used Java script to show some uniqueness and it get scrolled dowm smoothly when it gets clicked.
 
 
+
+![Screenshot 2024-04-28 214804](https://github.com/SriHariRamG/Netflix-clone-web/assets/152001019/a6807551-6967-40a3-a766-214316607d68)
+
+I have used the (download cv) that can download the uploaded pdf easily.
+And then I have used the icon links like (githu, twitter and linked)if you touch those icon it get you directly into the profile through website.
+Your information will be stored in Google Sheets so that you can see your mails sent by the user.
+
+
+
